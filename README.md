@@ -136,58 +136,6 @@ neo tag track.neo --title "My Song" --artist "My Band" --bpm 120 --key Cm
 neo model download 44khz
 ```
 
-## 📋 Roadmap
-
-### Phase 0 — Foundation ✅
-- [x] Project structure (Rust workspace + Python ML)
-- [x] Format specification v0.1
-- [x] LICENSE, README, CONTRIBUTING
-
-### Phase 1 — Container Format ✅
-- [x] Binary container writer (serialize .neo files)
-- [x] Binary container reader (deserialize + validate)
-- [x] BLAKE3 integrity verification
-- [x] Round-trip tests
-
-### Phase 2 — Audio Codec (MVP) ✅
-- [x] DAC ONNX export pipeline
-- [x] Rust ONNX inference (neo-codec)
-- [x] FLAC residual layer
-- [x] Opus preview layer
-- [x] CLI: encode, decode, info, play
-
-### Phase 3 — Smart Metadata ✅
-- [x] JSON-LD metadata schema
-- [x] C2PA content credentials
-- [x] Temporal lyrics/chords/BPM
-- [x] Web3 rights metadata
-
-### Phase 4 — Spatial Audio ✅
-- [x] 3D object positioning
-- [x] Ambisonics encoding/decoding
-- [x] Binaural HRTF rendering
-
-### Phase 5 — Streaming & P2P ✅
-- [x] Merkle tree chunking (BLAKE3/CID)
-- [x] Progressive LOD loading
-- [x] IPFS/iroh P2P distribution
-
-### Phase 6 — Non-Destructive Editing ✅
-- [x] Edit operation DAG
-- [x] Version history (git-like)
-- [x] Real-time operation application
-
-### Phase 7 — AI Features ✅
-- [x] Bandwidth extension (frequency hallucination)
-- [x] Stereo widening via AI
-- [x] Integrated source separation (Demucs)
-
-### Phase 8 — Ecosystem ✅
-- [x] WASM decoder for web playback
-- [x] VST3/CLAP plugin for DAWs
-- [x] Reference player (GUI)
-- [x] IETF standardization submission
-
 ## 📜 License
 
 This project is released into the public domain under the [Unlicense](./LICENSE).
