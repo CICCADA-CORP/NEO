@@ -9,14 +9,8 @@ description = "Neural audio components for the NEO format — DAC fork, ONNX exp
 license = "Unlicense"
 requires-python = ">=3.10"
 dependencies = [
-    "torch>=2.0",
-    "torchaudio>=2.0",
-    "descript-audio-codec>=1.0.0",
-    "onnx>=1.14",
-    "onnxruntime>=1.16",
     "numpy>=1.24",
     "soundfile>=0.12",
-    "librosa>=0.10",
 ]
 
 [project.optional-dependencies]
@@ -24,6 +18,16 @@ dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
     "ruff>=0.1",
+]
+dac = [
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "descript-audio-codec>=1.0.0",
+    "librosa>=0.10",
+]
+onnx = [
+    "onnx>=1.14",
+    "onnxruntime>=1.16",
 ]
 separation = [
     "demucs>=4.0",
