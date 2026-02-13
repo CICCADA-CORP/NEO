@@ -43,6 +43,11 @@ Usage:
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import torch
+
 import argparse
 import logging
 from dataclasses import dataclass, field

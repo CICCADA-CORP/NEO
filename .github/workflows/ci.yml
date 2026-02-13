@@ -22,6 +22,8 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: "crates -> target"
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Check
         working-directory: crates
         run: cargo check --workspace --all-targets
@@ -49,6 +51,8 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: "crates -> target"
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Clippy
         working-directory: crates
         run: cargo clippy --workspace --all-targets -- -D warnings
@@ -66,6 +70,9 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: "crates -> target"
+      - name: Install system dependencies (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Run tests
         working-directory: crates
         run: cargo test --workspace
@@ -79,6 +86,8 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: "crates -> target"
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Build docs
         working-directory: crates
         run: cargo doc --workspace --no-deps
@@ -141,6 +150,8 @@ jobs:
           workspaces: "crates -> target"
       - name: Install cargo-tarpaulin
         run: cargo install cargo-tarpaulin
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Generate coverage
         working-directory: crates
         run: cargo tarpaulin --workspace --out xml --output-dir coverage/
@@ -159,6 +170,8 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: "crates -> target"
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
       - name: Check MSRV
         working-directory: crates
         run: cargo check --workspace
