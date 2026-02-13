@@ -1,0 +1,16 @@
+[package]
+name = "neo-spatial"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Spatial audio for NEO — 3D object positioning, Ambisonics, binaural rendering"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+dasp = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

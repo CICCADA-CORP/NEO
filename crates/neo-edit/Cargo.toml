@@ -1,0 +1,17 @@
+[package]
+name = "neo-edit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Non-destructive editing for NEO — edit graphs, version history, git-like diffs"
+
+[dependencies]
+neo-format = { path = "../neo-format" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+blake3 = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

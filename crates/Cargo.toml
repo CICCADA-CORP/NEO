@@ -1,0 +1,52 @@
+[workspace]
+resolver = "2"
+members = [
+    "neo-format",
+    "neo-codec",
+    "neo-metadata",
+    "neo-spatial",
+    "neo-stream",
+    "neo-edit",
+    "neo-cli",
+    "neo-ffi",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Unlicense"
+repository = "https://github.com/anthropics/neo-codec"
+description = "NEO (Neural Extended Object) — The future of audio codecs"
+rust-version = "1.75"
+
+[workspace.dependencies]
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Hashing
+blake3 = "1"
+# Error handling
+thiserror = "2"
+anyhow = "1"
+# Bytes manipulation
+bytes = "1"
+byteorder = "1"
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+# Audio
+cpal = "0.15"
+hound = "3.5"
+dasp = "0.11"
+rubato = "0.15"
+# ONNX Runtime
+ort = "2.0.0-rc.11"
+# Content Credentials
+# c2pa = "0.36" # Will be enabled in Phase 3
+# CLI
+clap = { version = "4", features = ["derive"] }
+# Testing
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
+criterion = { version = "0.5", features = ["html_reports"] }

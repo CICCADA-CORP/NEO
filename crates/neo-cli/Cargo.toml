@@ -1,0 +1,32 @@
+[package]
+name = "neo-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line tool for the NEO audio format — encode, decode, play, inspect"
+
+[[bin]]
+name = "neo"
+path = "src/main.rs"
+
+[dependencies]
+neo-format = { path = "../neo-format" }
+neo-codec = { path = "../neo-codec" }
+neo-metadata = { path = "../neo-metadata" }
+neo-spatial = { path = "../neo-spatial" }
+neo-stream = { path = "../neo-stream" }
+neo-edit = { path = "../neo-edit" }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+serde_json = { workspace = true }
+hound = { workspace = true }
+cpal = { workspace = true }
+
+[dev-dependencies]
+assert_cmd = { workspace = true }
+predicates = { workspace = true }
+tempfile = { workspace = true }
+hound = { workspace = true }
+serde_json = { workspace = true }

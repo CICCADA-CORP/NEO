@@ -1,0 +1,39 @@
+# Rust
+/target/
+crates/target/
+**/*.rs.bk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+
+# ONNX models (large binary files)
+neural/models/*.onnx
+neural/models/*.pt
+neural/models/*.pth
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test artifacts
+tests/fixtures/*.neo
+tests/fixtures/*.wav
+
+# Build outputs
+dist/
+*.so
+*.dylib
+*.dll

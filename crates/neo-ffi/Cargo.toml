@@ -1,0 +1,16 @@
+[package]
+name = "neo-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "C FFI bindings for the NEO audio format library"
+
+[lib]
+crate-type = ["cdylib", "staticlib", "lib"]
+
+[dependencies]
+neo-format = { path = "../neo-format" }
+neo-codec = { path = "../neo-codec" }
+
+[dev-dependencies]
+tempfile = { workspace = true }

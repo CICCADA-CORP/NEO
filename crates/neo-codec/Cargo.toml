@@ -1,0 +1,16 @@
+[package]
+name = "neo-codec"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Audio codec abstraction layer for NEO — DAC neural codec, FLAC lossless, Opus lightweight"
+
+[dependencies]
+neo-format = { path = "../neo-format" }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+ort = { workspace = true }
+hound = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
