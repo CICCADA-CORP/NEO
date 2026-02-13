@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "neo-neural"
 version = "0.1.0"
 description = "Neural audio components for the NEO format — DAC fork, ONNX export, source separation"
-license = {text = "Unlicense"}
+license = "Unlicense"
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.0",
@@ -28,6 +28,9 @@ dev = [
 separation = [
     "demucs>=4.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["neo_neural*"]
 
 [tool.ruff]
 line-length = 100
