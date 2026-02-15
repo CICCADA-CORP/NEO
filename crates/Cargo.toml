@@ -15,7 +15,7 @@ members = [
 version = "0.1.0"
 edition = "2021"
 license = "Unlicense"
-repository = "https://github.com/anthropics/neo-codec"
+repository = "https://github.com/CICCADA-CORP/NEO"
 description = "NEO (Neural Extended Object) — The future of audio codecs"
 rust-version = "1.75"
 
