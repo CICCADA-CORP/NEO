@@ -8,7 +8,7 @@ NEO (Neural Extended Object) is an open-source, public domain audio codec format
 
 ```bash
 # Clone the repository
-git clone https://github.com/anthropics/neo-codec.git
+git clone https://github.com/CICCADA-CORP/NEO.git
 cd neo-codec
 
 # Build the CLI tool
