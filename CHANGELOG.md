@@ -42,5 +42,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - **CI/CD**: 6-job CI pipeline (check, fmt, clippy, test ×3 OS, doc, python-lint) + 5-target release pipeline
 - **Specification**: Complete 686-line format specification (SPECIFICATION.md)
 
-[Unreleased]: https://github.com/anthropics/neo-codec/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/anthropics/neo-codec/releases/tag/v0.1.0
+[Unreleased]: https://github.com/CICCADA-CORP/NEO/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/CICCADA-CORP/NEO/releases/tag/v0.1.0
